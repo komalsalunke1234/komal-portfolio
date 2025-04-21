@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Komal Kiran Salunke Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+.project-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+}
+.block-20 {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.cert-card {
+    width: 100%;
+    background: #000000;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(60, 59, 59, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cert-card:hover {
+    transform: scale(1.05);
+}
+
+.cert-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Komal Kiran Salunke</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+			  <li class="nav-item"><a href="#certification-section" class="nav-link"><span>Certificate</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		<div class="home-slider owl-carousel">
+		  <div class="slider-item">
+			<div class="overlay"></div>
+			<div class="container">
+			  <div class="row d-md-flex no-gutters align-items-center justify-content-between slider-text" data-scrollax-parent="true">
+				<!-- Text Content Section -->
+				<div class="col-md-7 d-flex align-items-center ftco-animate">
+				  <div class="text">
+					<span class="subheading">Namaste!</span>
+					<h1 class="mb-4 mt-3">I'm <span>Komal Kiran Salunke</span></h1>
+	  
+					<!-- Typing Animation -->
+					<span id="typing-animation"></span>
+	  
+					<script>
+					  const typingAnimationElement = document.getElementById('typing-animation');
+					  const typingTexts = ['Developer  ', 'Learner  ', 'Student   '];
+					  function playTypingAnimation(text) {
+						for (let i = 0; i < text.length; i++) {
+						  setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+						  }, i * 200);
+						}
+						setTimeout(() => {
+						  typingAnimationElement.textContent = '';
+						  playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+					  }
+					  playTypingAnimation(typingTexts[0]);
+					</script>
+	  
+					<br><br>
+					<h2>Student At Vishwakarma Institute of Information Technology</h2>
+					<p>
+					  <a href="https://www.youtube.com/@komalkiransalunke" class="btn btn-primary py-3 px-4">YouTube</a>
+					  <a href="https://www.linkedin.com/in/komalsalunke22311095/" class="btn btn-white btn-outline-white py-3 px-4">LinkedIn</a>
+					  <a href="https://github.com/komalsalunke1234" class="btn btn-white btn-outline-white py-3 px-4">GitHub</a>
+					  <a href="https://leetcode.com/u/salunkekomal/" class="btn btn-primary py-3 px-4">Leetcode</a>
+					</p>
+				  </div>
+				</div>
+	  
+				<!-- Image Section -->
+				<div class="col-md-4 order-md-last">
+				  <div class="img" style="background-image: url(images/komal.jpg); height: 300px; width: 300px; background-size: cover; background-position: center; border-radius: 80%; box-shadow: 2px 7px 10px rgba(241, 225, 6, 0.92);">
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+										<style>
+											.about-img {
+											  overflow: hidden;
+											  border-radius: 15px;
+											  box-shadow: 0 5px 18px rgba(229, 245, 5, 0.701);
+											  transition: transform 0.3s ease, box-shadow 0.5s ease;
+											  display: inline-block;
+											}
+										  
+											.about-img img {
+											  transition: transform 0.4s ease;
+											  border-radius: 12px;
+											}
+										  
+											.about-img:hover img {
+											  /* transform: scale(1.05) rotate(1deg); Slight zoom and rotate */
+											  box-shadow: 0 8px 20px rgba(237, 245, 5, 0.749);
+											}
+										  </style>
+										  
+										  <div class="about-img">
+											<img src="images/komalpic.jpg" class="img-fluid rounded b-shadow-a" alt="komal">
+										  </div>
+										  
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Komal Salunke</span></p>
+										<p><span class="title-s">College: </span> <span>VIIT PUNE</span></p>
+										<p><span class="title-s">Experience: </span> <span>Fresher</span></p>
+										<p><span class="title-s">Address: </span> <span>Pune, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>JAVA+DSA</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Flutter App Developement</span> <span class="pull-right">70%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Visualization(power BI)</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Web Developement</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>C++</span> <span class="pull-right">60%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>Hi! I’m Komal Salunke, a passionate Java, Flutter Developer, Frontend Web Developer dedicated to building innovative and user-friendly applications. I specialize in  mobile app development, UI/UX design, web solutions using tools like Flutter, Dart, Firebase , Java ,DSA,Networking  With a focus on clean code and seamless user experiences,
+									 I’ve worked on  dynamic apps or interactive websites to solve real-world challenges. A lifelong learner, I love exploring new technologies and creative problem-solving. Let’s connect and bring impactful ideas to life!</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Student</span></li>
+									<li class="d-flex"><span>Domain:</span> <span> Full Stack web and App development</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering at VIIT Pune</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi, Marathi</span></li>
+									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Presentation , communication , Hosting , Netwoking , Excel , Git &amp; SEO</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography,Reading</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+<br><br>
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="5">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Innovative and detail-oriented Software Developer, Flutter Developer with a strong foundation in  mobile and web application development. Proficient in leveraging modern technologies like Flutter, Dart, Java , DSA , Python to create user-friendly, scalable solutions. Adept at problem-solving, collaborating with teams, and translating ideas into impactful projects. Passionate about learning and applying emerging tech to enhance functionality and design.</p>
+          </div>
+		  
+        </div>
+		
+		<div class="row justify-content-center mt-5">
+			<div class="col-md-6 text-center ftco-animate">
+				<p><a href="https://docs.google.com/document/d/1infaiYM0NLv6gipCMbpMS4pbd1UHKPet/edit?usp=sharing&ouid=113177740217912569522&rtpof=true&sd=true" class="btn btn-primary py-4 px-5">Download CV</a></p>
+			</div>
+		</div>
+	
+
+	
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2023-2027</span>
+    					<h2>Bachelor of Engineering</h2>
+    					<span class="position">Vishwakarma Institute of Information Technolody Pune</span>
+    					<p class="mt-4">Grade: 8.68 CGPA</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2021-2023</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">K.S.K.W college Nashik</span>
+    					<p class="mt-4">Grade: 77.33 %     MHT-CET: 97.36 percentile</p>
+						<p class="mt-4">
+						Physics: 92  ,  Chemistry : 95  ,  Maths :98</p>
+    				</div>
+				</div>
+
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<!-- <span class="date"></span> -->
+    					<h2>Secondary School</h2>
+    					<span class="position">Janata Vidyalaya Pavannagar Cidco Nashik</span>
+    					<p class="mt-4">Grade: 96.80 %</p>
+						<p class="mt-4"> 2nd Rank in School </p>
+						
+    				</div>
+				</div>
+    		</div>
+
+    
+    </section>
+
+   
+
+	<section class="ftco-section" id="project-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Projects</h1>
+			  <h2 class="mb-4">Projects</h2>
+			  <p>Below are Projects that I have worked on</p>
+			</div>
+		  </div>
+		  <div class="row d-flex justify-content-center">
+			<!-- First Project -->
+			<div class="col-md-5 d-flex ftco-animate mb-4">
+			  <div class="blog-entry">
+				<a href="https://viit-creative-arts-gallery-fy.github.io/FY-IT-/" class="block-20 zoom-effect" style="background-image: url('images/creative art.png'); background-size: cover; background-position: center;">
+				</a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="https://viit-creative-arts-gallery-fy.github.io/FY-IT-/">Webpage using Html, CSS and JavaScript</a></h3>
+				  <p>This webpage is designed to showcase the creative projects developed by First-Year (FY) students. It highlights their innovative ideas and serves as a platform to celebrate their creativity and hard work during their first year of learning.</p>
+				</div>
+			  </div>
+			</div>
+	  
+
+			<!-- Second Projects -->
+			<div class="col-md-5 d-flex ftco-animate mb-4">
+				<div class="blog-entry">
+				  <a href="https://viitprojectlibrary.in/" class="block-20 zoom-effect" style="background-image: url('images/viitproject.png'); background-size: cover; background-position: center;">
+				  </a>
+				  <div class="text mt-3 float-right d-block">
+					<h3 class="heading"><a href="https://viitprojectlibrary.in/"> Viit Project Video Library  </a></h3>
+					<p>This is website use for engineering student for uploading videos of there respective projects </p>
+				  </div>
+				</div>
+			  </div>
+
+			
+
+		  <!-- third project -->
+
+		  <div class="col-md-5 d-flex ftco-animate mb-4">
+			<div class="blog-entry">
+			  <a href="https://komalsalunke1234.github.io/StyleSync/" class="block-20 zoom-effect" style="background-image: url('images/stylesync.png'); background-size: cover; background-position: center;">
+			  </a>
+			  <div class="text mt-3 float-right d-block">
+				<h3 class="heading"><a href="https://komalsalunke1234.github.io/StyleSync/">Webpage using Html, CSS and JavaScript used AR and python</a></h3>
+				<p>StyleSync is an innovative AR-integrated virtual try-on platform that enhances online shopping by allowing users to visualize clothing. The platform leverages Augmented Reality (AR), Artificial Intelligence (AI).</p>
+			  </div>
+			</div>
+		  </div>
+		   
+		  <!-- fourth project -->
+		  <div class="col-md-5 d-flex ftco-animate mb-4">
+			<div class="blog-entry">
+			  <a href="https://github.com/komalsalunke1234/Notes_Application" class="block-20 zoom-effect" style="background-image: url('images/notes.png'); background-size: cover; background-position: center;">
+			  </a>
+			  <div class="text mt-3 float-right d-block">
+				<h3 class="heading"><a href="https://github.com/komalsalunke1234/Notes_Application"> Notes Application Using Flutter ,Dart And Firebase </a></h3>
+				<p>Notes Application is Made using the flutter ,Dart, Firebase . Here  we use flutter for the cross platform application so IOS user also able to use our application</p>
+			  </div>
+			</div>
+		  </div>
+		  <!-- fifth project -->
+		  <div class="col-md-5 d-flex ftco-animate mb-4">
+			<div class="blog-entry">
+			  <a href="https://github.com/komalsalunke1234/PowerBI-Project.git" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg'); background-size: cover; background-position: center;">
+			  </a>
+			  <div class="text mt-3 float-right d-block">
+				<h3 class="heading"><a href="https://github.com/komalsalunke1234/PowerBI-Project.git">Power BI Sales Dashboard Project</a></h3>
+				<p>Designed a Power BI dashboard for Madhav Store to track and analyze the online sales data across India.</p>
+			  </div>
+			</div>
+		  </div>
+		
+	  
+		  <!-- Additional rows can be added below for more projects -->
+		  <!-- Center alignment will be consistent -->
+		</div>
+	  </section>
+	  
+	  
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <!-- <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="20">0</strong>
+                <span>Achievements</span>
+              </div> -->
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <!-- <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="3">0</strong>
+                <span>Projects</span>
+              </div> -->
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <!-- <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1000">0</strong>
+                <span>Mentored Students</span>
+              </div>
+            </div> -->
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <!-- <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="500">0</strong>
+                <span>Cups of coffee</span> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve Coding problems  </h4>
+						<br>
+						<p><a href="https://github.com/komalsalunke1234" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+	<!-- certification section  -->
+
+	<section class="ftco-section" id="certification-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Certification and Achievements</h1>
+					<h2 class="mb-4">Certificates</h2>
+					<p>Below are Certifications that I have got</p>
+				</div>
+			</div>
+			<div class="row">
+				<!-- Certificate 1 -->
+				<style>
+					.cert-card {
+					  width: 300px;
+					  height: 300px; /* Or any fixed height you prefer */
+					  padding: 0px;
+					  background-color: #f9f9f9;
+					  border-radius: 10px;
+					  text-align: center;
+					  box-shadow: 0 4px 8px rgba(240, 77, 7, 0.689);
+					  overflow:hidden;
+					}
+				  
+					.cert-img {
+					  width: 100%;
+					  height: 100%;
+					  object-fit:fill; /* Makes sure the image fits perfectly without zoom/crop */
+					  border-radius: 8px;
+					}
+				  
+					.cert-card h3 {
+					  font-size: 16px;
+					  margin-top: 0px;
+					}
+				  </style>
+				  
+				  <div class="col-md-3 d-flex ftco-animate mb-4">
+					<div class="cert-card">
+					  <img src="images/CCNA certificatee.jpg" alt="CCNA Certification" class="cert-img">
+					  <h3>CCNA Certification for Networking</h3>
+					</div>
+				  </div>
+				  
+				<!-- Certificate 2 -->
+				<div class="col-md-3 d-flex ftco-animate mb-4">
+					<div class="cert-card">
+						<img src="images/nptel.png" alt="NPTEL Java Certification" class="cert-img">
+						<h3>Data Structures and Algorithm in Java Certification</h3>
+					</div>
+				</div>
+				<!-- Certificate 3 -->
+				<div class="col-md-3 d-flex ftco-animate mb-4">
+					<div class="cert-card">
+						<img src="images/flutter.png" alt="Flutter Certification" class="cert-img">
+						<h3>Flutter and Dart App Development</h3>
+					</div>
+				</div>
+				<!-- Certificate 4 -->
+				<div class="col-md-3 d-flex ftco-animate mb-4">
+					<div class="cert-card">
+						<img src="images/linkdinlearningcertificate.png" alt="linkedin Certification" class="cert-img">
+						<h3>AWS Cloud Practitioner Certification</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	  
+	  
+
+	</section>
+
+
+	
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Pune, Maharastra, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel">123456789</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="ansc">abc@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="https://drive.google.com/file/d/1K8H1JCsxq-UKAAPvokbTxv3sg1gZEGgH/view?usp=sharing">Resume link</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			
+
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://www.youtube.com/@komalkiransalunke"><span class="icon-youtube"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/komalsalunke22311095/"><span class="icon-linkedin"></span></a></li>  
+					  <!-- <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-twitter"></span></a></li>
+					  <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/rishabhnmishra/"><span class="icon-instagram"></span></a></li> -->
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
