@@ -9,7 +9,7 @@ const roles = [
 const root = document.documentElement;
 const storedTheme = localStorage.getItem('portfolio-theme');
 const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-const initialTheme = storedTheme || (prefersDark ? 'dark' : 'light');
+const initialTheme = storedTheme || 'dark';
 
 const siteNav = document.getElementById('site-nav');
 const menuToggle = document.querySelector('.menu-toggle');
